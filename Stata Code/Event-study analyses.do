@@ -7,19 +7,6 @@ Output files created: synthplot_VARNAME_COUNTRYNAME.pdf, testplot_VARNAME.pdf,
 	rawplot_VARNAME.pdf, eventstudy_VARNAME.pdf
 */
 
-if "`c(username)'"=="shakkednoy" {
-		
-	global workingfolder "/Users/shakkednoy/Dropbox/Codetermination_EPI/Replication File"
-	
-	global rawfolder "${workingfolder}/Raw Data"
-	global intermediate "${workingfolder}/Intermediate Stata Data"
-	global outfolder "${workingfolder}/Output"
-	global adopath "${workingfolder}/Ado"
-	
-	cd "${intermediate}"
-	
-}
-
 #delimit;
 set more off;
 clear all;
@@ -60,10 +47,10 @@ foreach var in wagegrowth laborshare netcapital tfpgrowth gdp_growth rank_strike
 	if "`var'"=="netcapital" {;
 		local ytitle1 "Net Capital Formation (% of GDP)";
 		local ytitle2 "Effect on Net Capital Formation (ppt of GDP)";
-		local yscale "-6 5.5";
-		local y1 = 5;
-		local y2 = 4.5;
-		local y3 = 4;
+		local yscale "-3 1.5";
+		local y1 = 1.4;
+		local y2 = 1.2;
+		local y3 = 1;
 	};
 	if "`var'"=="tfpgrowth" {;
 		local ytitle1 "TFP Growth (%)";
@@ -84,10 +71,10 @@ foreach var in wagegrowth laborshare netcapital tfpgrowth gdp_growth rank_strike
 	if "`var'"=="rank_strikes" {;
 		local ytitle1 "Strike Intensity Rank (0-1)";
 		local ytitle2 "Effect on Strike Intensity Rank (0-1)";
-		local yscale = "-0.5 0.7";
-		local y1 = 0.65;
-		local y2 = 0.6;
-		local y3 = 0.55;
+		local yscale = "-0.5 0.6";
+		local y1 = 0.85;
+		local y2 = 0.78;
+		local y3 = 0.71;
 	};
 	if "`var'"=="capital_intensity" {;
 		local ytitle1 "Log Capital/Labor Ratio";

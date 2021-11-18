@@ -9,19 +9,6 @@ Output files created: ecs_involved13.pdf, ecs_influence_comparison19_num.pdf,
 
 */
 
-if "`c(username)'"=="shakkednoy" {
-		
-	global workingfolder "/Users/shakkednoy/Dropbox/Codetermination_EPI/Replication File"
-	
-	global rawfolder "${workingfolder}/Raw Data"
-	global intermediate "${workingfolder}/Intermediate Stata Data"
-	global outfolder "${workingfolder}/Output"
-	global adopath "${workingfolder}/Ado"
-	
-	cd "${intermediate}"
-	
-}
-
 
 #delimit;
 set more off;

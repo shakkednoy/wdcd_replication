@@ -122,17 +122,9 @@ replace country = "Germany" if country=="West Germany";
 save science_unemp, replace;
 
 
-
-* or, correlation between unemployment and GDP growth?;
-
-
-
-* gap between wages and productivity?
-
 *** GDP;
 use ameco6_raw, clear;
 
-*keep if (v3=="01 Gross domestic product" & v5=="(Mrd PPS) ") | _n==1;
 keep if (v3=="01 Gross domestic product" & v4=="Gross domestic product at 2015 reference levels ") | _n==1;
 
 rename v2 country;
@@ -181,7 +173,7 @@ egen countrygroup = group(country);
 
 save ameco_gdp_raw, replace;
 
-* converting to 'growth in GDP per capita;
+* converting to 'growth in GDP per capita';
 
 * merging on population;
 merge 1:1 country year using ameco_pop_wid, keepusing(population) keep(master match) nogen;
