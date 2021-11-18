@@ -38,7 +38,7 @@ European Company Survey files) are contained in the "Raw Data" folder:
 	URL: https://www.oecd.org/employment/ictwss-database.htm
 
 This file also requires the installation of several commands from ssc, including 'xls2dta',
-'reghdfe', [others?]
+'reghdfe', 'synth', 'boottest'
 
 
  */
