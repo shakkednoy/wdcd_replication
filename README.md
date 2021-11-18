@@ -20,4 +20,24 @@ The Raw Data folder contains the following files:
 - "cbr_data.xlsx", which is the dataset from the CBR Labor Regulation Index
 	compiled by Adams, Bishop, and Deakin (2016). This dataset is downloaded from
 	the following URL: https://www.repository.cam.ac.uk/handle/1810/256566
+- Several Excel files named "ILO_COUNTRYNAME.xlsx", which contain data on strike
+	intensity at the country-year level (and population, which we use to fill in years
+	prior to 1960, which is when the World Bank population data start). These data
+	are sourced from International Labour Organization Yearbooks; they are compiled
+	by Sjaak van der Velden, whom we thank, and the full source dataset is available for download
+	at the following URL: https://datasets.iisg.amsterdam/dataverse/Global
+- Several .txt files named "AMECOnum.txt", which contain data on aggregate 
+	economic outcomes from the European Commission's AMECO database. They are
+	available for download at the following URL: https://ec.europa.eu/info/business-economy-euro/indicators-statistics/economic-databases/macro-economic-database-ameco/download-annual-data-set-macro-economic-database-ameco_en
+- "WEF labor relations.xlsx" presents average responses at the country-year level 
+	to a question in the World Economic Forum's Executive Opinion Survey, about
+	the cooperativeness of labor relations. The data are available since 2007.
+	The source file, "WEF labor relations source file.xlsx", can be downloaded
+	from the following URL: http://reports.weforum.org/global-competitiveness-report-2015-2016/competitiveness-dataset-xls/
+- "OECD Institutions Data.xlsx", which contains historical data at the country-year
+	level on works council powers, union density, and centralization in collective bargaining.
+	The data are drawn from the OECD/IAIS ICTWSS dataset, accessible at the following
+	URL: https://www.oecd.org/employment/ictwss-database.htm
 
+NOTES:
+Running the code requires installation of the following (possibly non-exhaustive) list of Stata packages:
