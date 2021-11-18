@@ -1,13 +1,13 @@
 # wdcd_replication
 This repository contains the data and code necessary to replicate the results in "What Does Codetermination Do?" (Jäger, Noy, and Schoefer, 2021, ILR Review), with the exception of the European Company Survey data (which are not publicly available, but can be downloaded with a license).
 
-INSTRUCTIONS:
+## INSTRUCTIONS:
 - Download the raw data files in the folder "Raw Data", and save them in a folder named "Raw Data"
 - Download the .do files in the folder "State Code", and save them in a folder named "Stata Code"
 - Download "Master File.do", and update the working directory and paths at the top of the document to match your computer
 - Run "Master File.do"
 
-EXPLANATION:
+## EXPLANATION:
 
 The Raw Data folder contains the following files:
 - "World_Countries.shp" and "World_Countries.dbf" (standard shape files for Stata's
@@ -39,5 +39,5 @@ The Raw Data folder contains the following files:
 	The data are drawn from the OECD/IAIS ICTWSS dataset, accessible at the following
 	URL: https://www.oecd.org/employment/ictwss-database.htm
 
-NOTES:
+## NOTES:
 Running the code requires installation of the following (possibly non-exhaustive) list of Stata packages:
