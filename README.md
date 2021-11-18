@@ -4,6 +4,7 @@ This repository contains the data and code necessary to replicate the results in
 ## INSTRUCTIONS
 - Download the raw data files in the folder "Raw Data", and save them in a folder named "Raw Data"
 - Download the .do files in the folder "State Code", and save them in a folder named "Stata Code"
+- Download the .ado files in the folder "Ado", and save them in a folder named "Ado"
 - Download "Master File.do", and update the working directory and paths at the top of the document to match your computer
 - Run "Master File.do"
 
